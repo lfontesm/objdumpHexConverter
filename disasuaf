@@ -1,0 +1,164 @@
+Disassembly of section .text:
+main():
+0000000000400ec4 <main> push   rbp
+0000000000400ec5 <main+0x1> mov    rbp,rsp
+0000000000400ec8 <main+0x4> push   r12
+0000000000400eca <main+0x6> push   rbx
+0000000000400ecb <main+0x7> sub    rsp,0x50
+0000000000400ecf <main+0xb> mov    DWORD PTR [rbp-0x54],edi
+0000000000400ed2 <main+0xe> mov    QWORD PTR [rbp-0x60],rsi
+0000000000400ed6 <main+0x12> lea    rax,[rbp-0x12]
+0000000000400eda <main+0x16> mov    rdi,rax
+0000000000400edd <main+0x19> call   0000000000400d70 <std::allocator<char>::allocator()@plt>
+0000000000400ee2 <main+0x1e> lea    rdx,[rbp-0x12]
+0000000000400ee6 <main+0x22> lea    rax,[rbp-0x50]
+0000000000400eea <main+0x26> mov    esi,0x4014f0
+0000000000400eef <main+0x2b> mov    rdi,rax
+0000000000400ef2 <main+0x2e> call   0000000000400d10 <std::basic_string<char, std::char_traits<char>, std::allocator<char> >::basic_string(char const*, std::allocator<char> const&)@plt>
+0000000000400ef7 <main+0x33> lea    r12,[rbp-0x50]
+0000000000400efb <main+0x37> mov    edi,0x18
+0000000000400f00 <main+0x3c> call   0000000000400d90 <operator new(unsigned long)@plt>
+0000000000400f05 <main+0x41> mov    rbx,rax
+0000000000400f08 <main+0x44> mov    edx,0x19
+0000000000400f0d <main+0x49> mov    rsi,r12
+0000000000400f10 <main+0x4c> mov    rdi,rbx
+0000000000400f13 <main+0x4f> call   0000000000401264 <Man::Man(std::string, int)>
+0000000000400f18 <main+0x54> mov    QWORD PTR [rbp-0x38],rbx
+0000000000400f1c <main+0x58> lea    rax,[rbp-0x50]
+0000000000400f20 <main+0x5c> mov    rdi,rax
+0000000000400f23 <main+0x5f> call   0000000000400d00 <std::basic_string<char, std::char_traits<char>, std::allocator<char> >::~basic_string()@plt>
+0000000000400f28 <main+0x64> lea    rax,[rbp-0x12]
+0000000000400f2c <main+0x68> mov    rdi,rax
+0000000000400f2f <main+0x6b> call   0000000000400d40 <std::allocator<char>::~allocator()@plt>
+0000000000400f34 <main+0x70> lea    rax,[rbp-0x11]
+0000000000400f38 <main+0x74> mov    rdi,rax
+0000000000400f3b <main+0x77> call   0000000000400d70 <std::allocator<char>::allocator()@plt>
+0000000000400f40 <main+0x7c> lea    rdx,[rbp-0x11]
+0000000000400f44 <main+0x80> lea    rax,[rbp-0x40]
+0000000000400f48 <main+0x84> mov    esi,0x4014f5
+0000000000400f4d <main+0x89> mov    rdi,rax
+0000000000400f50 <main+0x8c> call   0000000000400d10 <std::basic_string<char, std::char_traits<char>, std::allocator<char> >::basic_string(char const*, std::allocator<char> const&)@plt>
+0000000000400f55 <main+0x91> lea    r12,[rbp-0x40]
+0000000000400f59 <main+0x95> mov    edi,0x18
+0000000000400f5e <main+0x9a> call   0000000000400d90 <operator new(unsigned long)@plt>
+0000000000400f63 <main+0x9f> mov    rbx,rax
+0000000000400f66 <main+0xa2> mov    edx,0x15
+0000000000400f6b <main+0xa7> mov    rsi,r12
+0000000000400f6e <main+0xaa> mov    rdi,rbx
+0000000000400f71 <main+0xad> call   0000000000401308 <Woman::Woman(std::string, int)>
+0000000000400f76 <main+0xb2> mov    QWORD PTR [rbp-0x30],rbx
+0000000000400f7a <main+0xb6> lea    rax,[rbp-0x40]
+0000000000400f7e <main+0xba> mov    rdi,rax
+0000000000400f81 <main+0xbd> call   0000000000400d00 <std::basic_string<char, std::char_traits<char>, std::allocator<char> >::~basic_string()@plt>
+0000000000400f86 <main+0xc2> lea    rax,[rbp-0x11]
+0000000000400f8a <main+0xc6> mov    rdi,rax
+0000000000400f8d <main+0xc9> call   0000000000400d40 <std::allocator<char>::~allocator()@plt>
+0000000000400f92 <main+0xce> mov    esi,0x4014fa
+0000000000400f97 <main+0xd3> mov    edi,0x602260
+0000000000400f9c <main+0xd8> call   0000000000400cf0 <std::basic_ostream<char, std::char_traits<char> >& std::operator<< <std::char_traits<char> >(std::basic_ostream<char, std::char_traits<char> >&, char const*)@plt>
+0000000000400fa1 <main+0xdd> lea    rax,[rbp-0x18]
+0000000000400fa5 <main+0xe1> mov    rsi,rax
+0000000000400fa8 <main+0xe4> mov    edi,0x6020e0
+0000000000400fad <main+0xe9> call   0000000000400dd0 <std::istream::operator>>(unsigned int&)@plt>
+0000000000400fb2 <main+0xee> mov    eax,DWORD PTR [rbp-0x18]
+0000000000400fb5 <main+0xf1> cmp    eax,0x2
+0000000000400fb8 <main+0xf4> je     0000000000401000 <main+0x13c>
+0000000000400fba <main+0xf6> cmp    eax,0x3
+0000000000400fbd <main+0xf9> je     0000000000401076 <main+0x1b2>
+0000000000400fc3 <main+0xff> cmp    eax,0x1
+0000000000400fc6 <main+0x102> je     0000000000400fcd <main+0x109>
+0000000000400fc8 <main+0x104> jmp    00000000004010a9 <main+0x1e5>
+0000000000400fcd <main+0x109> mov    rax,QWORD PTR [rbp-0x38]
+0000000000400fd1 <main+0x10d> mov    rax,QWORD PTR [rax]
+0000000000400fd4 <main+0x110> add    rax,0x8
+0000000000400fd8 <main+0x114> mov    rdx,QWORD PTR [rax]
+0000000000400fdb <main+0x117> mov    rax,QWORD PTR [rbp-0x38]
+0000000000400fdf <main+0x11b> mov    rdi,rax
+0000000000400fe2 <main+0x11e> call   rdx
+0000000000400fe4 <main+0x120> mov    rax,QWORD PTR [rbp-0x30]
+0000000000400fe8 <main+0x124> mov    rax,QWORD PTR [rax]
+0000000000400feb <main+0x127> add    rax,0x8
+0000000000400fef <main+0x12b> mov    rdx,QWORD PTR [rax]
+0000000000400ff2 <main+0x12e> mov    rax,QWORD PTR [rbp-0x30]
+0000000000400ff6 <main+0x132> mov    rdi,rax
+0000000000400ff9 <main+0x135> call   rdx
+0000000000400ffb <main+0x137> jmp    00000000004010a9 <main+0x1e5>
+0000000000401000 <main+0x13c> mov    rax,QWORD PTR [rbp-0x60]
+0000000000401004 <main+0x140> add    rax,0x8
+0000000000401008 <main+0x144> mov    rax,QWORD PTR [rax]
+000000000040100b <main+0x147> mov    rdi,rax
+000000000040100e <main+0x14a> call   0000000000400d20 <atoi@plt>
+0000000000401013 <main+0x14f> cdqe   
+0000000000401015 <main+0x151> mov    QWORD PTR [rbp-0x28],rax
+0000000000401019 <main+0x155> mov    rax,QWORD PTR [rbp-0x28]
+000000000040101d <main+0x159> mov    rdi,rax
+0000000000401020 <main+0x15c> call   0000000000400c70 <operator new[](unsigned long)@plt>
+0000000000401025 <main+0x161> mov    QWORD PTR [rbp-0x20],rax
+0000000000401029 <main+0x165> mov    rax,QWORD PTR [rbp-0x60]
+000000000040102d <main+0x169> add    rax,0x10
+0000000000401031 <main+0x16d> mov    rax,QWORD PTR [rax]
+0000000000401034 <main+0x170> mov    esi,0x0
+0000000000401039 <main+0x175> mov    rdi,rax
+000000000040103c <main+0x178> mov    eax,0x0
+0000000000401041 <main+0x17d> call   0000000000400dc0 <open@plt>
+0000000000401046 <main+0x182> mov    rdx,QWORD PTR [rbp-0x28]
+000000000040104a <main+0x186> mov    rcx,QWORD PTR [rbp-0x20]
+000000000040104e <main+0x18a> mov    rsi,rcx
+0000000000401051 <main+0x18d> mov    edi,eax
+0000000000401053 <main+0x18f> call   0000000000400ca0 <read@plt>
+0000000000401058 <main+0x194> mov    esi,0x401513
+000000000040105d <main+0x199> mov    edi,0x602260
+0000000000401062 <main+0x19e> call   0000000000400cf0 <std::basic_ostream<char, std::char_traits<char> >& std::operator<< <std::char_traits<char> >(std::basic_ostream<char, std::char_traits<char> >&, char const*)@plt>
+0000000000401067 <main+0x1a3> mov    esi,0x400d60
+000000000040106c <main+0x1a8> mov    rdi,rax
+000000000040106f <main+0x1ab> call   0000000000400d50 <std::ostream::operator<<(std::ostream& (*)(std::ostream&))@plt>
+0000000000401074 <main+0x1b0> jmp    00000000004010a9 <main+0x1e5>
+0000000000401076 <main+0x1b2> mov    rbx,QWORD PTR [rbp-0x38]
+000000000040107a <main+0x1b6> test   rbx,rbx
+000000000040107d <main+0x1b9> je     000000000040108f <main+0x1cb>
+000000000040107f <main+0x1bb> mov    rdi,rbx
+0000000000401082 <main+0x1be> call   000000000040123a <Human::~Human()>
+0000000000401087 <main+0x1c3> mov    rdi,rbx
+000000000040108a <main+0x1c6> call   0000000000400c80 <operator delete(void*)@plt>
+000000000040108f <main+0x1cb> mov    rbx,QWORD PTR [rbp-0x30]
+0000000000401093 <main+0x1cf> test   rbx,rbx
+0000000000401096 <main+0x1d2> je     00000000004010a8 <main+0x1e4>
+0000000000401098 <main+0x1d4> mov    rdi,rbx
+000000000040109b <main+0x1d7> call   000000000040123a <Human::~Human()>
+00000000004010a0 <main+0x1dc> mov    rdi,rbx
+00000000004010a3 <main+0x1df> call   0000000000400c80 <operator delete(void*)@plt>
+00000000004010a8 <main+0x1e4> nop
+00000000004010a9 <main+0x1e5> jmp    0000000000400f92 <main+0xce>
+00000000004010ae <main+0x1ea> mov    r12,rax
+00000000004010b1 <main+0x1ed> mov    rdi,rbx
+00000000004010b4 <main+0x1f0> call   0000000000400c80 <operator delete(void*)@plt>
+00000000004010b9 <main+0x1f5> mov    rbx,r12
+00000000004010bc <main+0x1f8> jmp    00000000004010c1 <main+0x1fd>
+00000000004010be <main+0x1fa> mov    rbx,rax
+00000000004010c1 <main+0x1fd> lea    rax,[rbp-0x50]
+00000000004010c5 <main+0x201> mov    rdi,rax
+00000000004010c8 <main+0x204> call   0000000000400d00 <std::basic_string<char, std::char_traits<char>, std::allocator<char> >::~basic_string()@plt>
+00000000004010cd <main+0x209> jmp    00000000004010d2 <main+0x20e>
+00000000004010cf <main+0x20b> mov    rbx,rax
+00000000004010d2 <main+0x20e> lea    rax,[rbp-0x12]
+00000000004010d6 <main+0x212> mov    rdi,rax
+00000000004010d9 <main+0x215> call   0000000000400d40 <std::allocator<char>::~allocator()@plt>
+00000000004010de <main+0x21a> mov    rax,rbx
+00000000004010e1 <main+0x21d> mov    rdi,rax
+00000000004010e4 <main+0x220> call   0000000000400da0 <_Unwind_Resume@plt>
+00000000004010e9 <main+0x225> mov    r12,rax
+00000000004010ec <main+0x228> mov    rdi,rbx
+00000000004010ef <main+0x22b> call   0000000000400c80 <operator delete(void*)@plt>
+00000000004010f4 <main+0x230> mov    rbx,r12
+00000000004010f7 <main+0x233> jmp    00000000004010fc <main+0x238>
+00000000004010f9 <main+0x235> mov    rbx,rax
+00000000004010fc <main+0x238> lea    rax,[rbp-0x40]
+0000000000401100 <main+0x23c> mov    rdi,rax
+0000000000401103 <main+0x23f> call   0000000000400d00 <std::basic_string<char, std::char_traits<char>, std::allocator<char> >::~basic_string()@plt>
+0000000000401108 <main+0x244> jmp    000000000040110d <main+0x249>
+000000000040110a <main+0x246> mov    rbx,rax
+000000000040110d <main+0x249> lea    rax,[rbp-0x11]
+0000000000401111 <main+0x24d> mov    rdi,rax
+0000000000401114 <main+0x250> call   0000000000400d40 <std::allocator<char>::~allocator()@plt>
+0000000000401119 <main+0x255> mov    rax,rbx
+000000000040111c <main+0x258> mov    rdi,rax
